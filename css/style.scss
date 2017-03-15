@@ -6,17 +6,13 @@ $primary-color: #222222;
   font-family: Lato, sans-serif;
 }
 
-* hr {
-
-}
-
 /*____FIRST SECTION_____*/
 .ba-container {
   background: url("../image/1header-img.png") 100% no-repeat;
   background-size: cover;
   display: block;
   /*  width: 1600px;*/
-  height: 100vh;
+  height: 900px;/*100vh;*/
   min-width: 500px;
   margin: 0;
   color: #fffefe;
@@ -108,21 +104,32 @@ $primary-color: #222222;
     line-height: 30px;
     text-align: center;
     white-space: pre;
-    margin-bottom: 100px; /*16:9, 1366x768*/
+    margin-bottom: 220px; /*16:9, 1366x768*/
   }
   #anchor {
     display: block;
+    border-radius: 50%;
+    bottom: 46px;
     width: 92px;
     height: 92px;
     color: #ffffff;
-    opacity: 0.5;
+    opacity: 0.2;
     margin: 0 auto;
   }
   #anchor:hover {
-    background-color: #1ef0ed;
-    border-radius: 50%;
+    display: block;
+  /*  background-image: linear-gradient(#79aa4a, #5daa8d);
+    border-radius: 50%;*/
     transition: 1.2s;
+    opacity: 0.8;
   }
+  /*.ion-chevron-down {
+    font-size: 40px;
+    font-weight: 100;
+    position: relative;
+    text-align: center;
+    margin-bottom: 150px;
+  }*/
 }
 
 /*____SECOND SECTION_____*/
@@ -176,5 +183,65 @@ $primary-color: #222222;
 
 /*____THIRD SECTION_____*/
 .ba-container-iphone {
+  display: block;
+  background: url("../image/3section-background.png") 100% no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  img {
+    display: block;
+    float: right;
+    position: absolute;
+    right: 313px;
+    z-index: 0;
+    margin-top: 75px;
+  }
+  &__item {
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding-top: 130px;
+    margin-left: 213px;
+    h2 {
+      display: block;
+      color: #ffffff;
+      font-size: 45px;
+      font-weight: 400;
+      line-height: 46px;
+      text-transform: uppercase;
+    }
+    p {
+      width: 524px;
+      height: 78px;
+      float: left;
+      font-size: 22px;
+      font-weight: 100;
+      line-height: 23px;
+      color: #ffffff;
+      margin-top: -20px;
+      text-align: left;
+    }
+    a {
+      margin-top: 48px;
+      display: block;
+      clear: left;
+      float: left;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 20px;
+      text-decoration: underline;
+    }
+    a:hover {
+      display: block;
+      transform: scale(1.2);
+      transition: 1.5s;
+      color: #a7ee69;
+      text-decoration: none;
+      border-left: 1px solid #a7ee69;
+      border-right: 1px solid #a7ee69;
+      padding: 0 8px 0;
+    }
 
+  }
 }
