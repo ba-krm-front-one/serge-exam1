@@ -37,18 +37,18 @@
         <a href="#App">
             <img id="anchor" src="image/1sec-buttondown.svg" alt="down-to-app">
         </a>
-           <!-- <div class="ion-chevron-down"></div>-->
+        <!-- <div class="ion-chevron-down"></div>-->
     </section>
 </header>
 <main>
     <div class="flex-container">                        <!--SECOND SECTION-->
         <section class="flex-container__intro">
-            <h1>our services</h1>
+            <h1 id="App">our services</h1>
             <hr>
         </section>
         <section class="flex-container__services">
             <img src="image/2section-iphone.svg" alt="#">
-            <h2 id="App">App Design</h2>
+            <h2>App Design</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 ilabore et dolore.
@@ -71,68 +71,70 @@
             </p>
         </section>
     </div>
-        <section class="ba-container-iphone">            <!--THIRD SECTION-->
-            <img src="image/3section-phone.png" alt="#">
-            <div class="ba-container-iphone__item">
-                <h2>dolore magna aliqua</h2>
-                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </p>
-                <a href="#">more</a>
-
-            </div>
-            <!--<div class="ba-container-iphone__item">
-                &lt;!&ndash;<img src="image/3section-phone.png" alt="#">&ndash;&gt;
-            </div>-->
-        </section>
-        <section class="ba-container-our work">          <!--FOURTH SECTION-->
+    <section class="ba-container-iphone">            <!--THIRD SECTION-->
+        <!-- <div id="invisible"></div>-->
+        <img src="image/3section-phone.png" alt="#">
+        <div class="ba-container-iphone__item">
+            <h2>dolore magna aliqua</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua.
+            </p>
+            <a href="#">more</a>
+        </div>
+    </section>
+    <section>                                       <!--FOURTH SECTION-->
+        <div class="ba-container-our-work-header">
             <h2>our work</h2>
             <hr>
+        </div>
+        <div class="flex-container">
             <div class="flex-container__our-work">
-                <img src="" alt="">
-                <div class="flex-container__our-work--hover-effect">
+                <img src="image/4section-planet.png" alt="#">
+                    <div class="flex-container__our-work--animation">
+                        <h3>kinderen planet</h3>
+                        <img src="image/4sec-animation%20.svg" alt="#">
+                    </div>
+            </div>
+            <div class="flex-container__our-work">
+                <img src="image/4section-jetindus.png" alt="#">
+                <div class="flex-container__our-work--animation">
                     <h3>kinderen planet</h3>
-                    <img src="image/4sec-animation%20.svg" alt="">
+                    <img src="image/4sec-animation%20.svg" alt="#">
                 </div>
             </div>
-            <div class="flex-container">
-                <img src="" alt="">
-                <div class="flex-container__our-work--hover-effect">
+            <div class="flex-container__our-work">
+                <img src="image/4section-cards.png" alt="#">
+                <div class="flex-container__our-work--animation">
                     <h3>kinderen planet</h3>
-                    <img src="image/4sec-animation%20.svg" alt="">
+                    <img src="image/4sec-animation%20.svg" alt="#">
                 </div>
             </div>
-            <div class="flex-container">
-                <img src="" alt="">
-                <div class="flex-container__our-work--hover-effect">
-                    <h3>kinderen planet</h3>
-                    <img src="image/4sec-animation%20.svg" alt="">
-                </div>
-            </div>
-        </section>
+        </div>
+        <button id="our-work-button">MORE</button>
+    </section>
 </main>
-<footer>
-       <section>
-           <h2>get in touch</h2>
-           <hr>
-           <ul>
-               <li class="ion-social-twitter-outline"></li>
-               <li class="ion-social-facebook-outline"></li>
-               <li class="ion-social-linkedin-outline"></li>
-               <li class="ion-social-vimeo-outline"></li>
-               <li class="behance"></li>
-           </ul>
-           <form action="#">
-               <label>
-                   <input type="text" name="name" placeholder="Name" required>
-                   <input type="email" name="email" placeholder="Email" required>
-               </label>
-               <input type="text" name="message" placeholder="Message" required>
-           </form>
-           <button>SEND</button>
-       </section>
+<footer>                                              <!--FIFTH SECTION-->
+    <section>
+        <h2>get in touch</h2>
+        <hr>
+        <ul>
+            <li class="ion-social-twitter-outline"></li>
+            <li class="ion-social-facebook-outline"></li>
+            <li class="ion-social-linkedin-outline"></li>
+            <li class="ion-social-vimeo-outline"></li>
+            <li class="behance"></li>
+        </ul>
+        <form action="#">
+            <label>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+            </label>
+            <input type="text" name="message" placeholder="Message" required>
+        </form>
+        <button>SEND</button>
+    </section>
 </footer>
 </body>
 </html>

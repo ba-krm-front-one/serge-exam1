@@ -1,4 +1,5 @@
 $primary-color: #222222;
+$second-primary-color:#ffffff;
 *,
 *:before,
 *:after {
@@ -12,7 +13,7 @@ $primary-color: #222222;
   background-size: cover;
   display: block;
   /*  width: 1600px;*/
-  height: 900px;/*100vh;*/
+  height: 900px; /*100vh;*/
   min-width: 500px;
   margin: 0;
   color: #fffefe;
@@ -78,7 +79,7 @@ $primary-color: #222222;
   h1 {
     display: block;
     text-align: center;
-    color: #ffffff;
+    color: $second-primary-color;
     font-family: Raleway, sans-serif;
     font-size: 40px;
     font-weight: 700;
@@ -112,14 +113,14 @@ $primary-color: #222222;
     bottom: 46px;
     width: 92px;
     height: 92px;
-    color: #ffffff;
+    color: $second-primary-color;
     opacity: 0.2;
     margin: 0 auto;
   }
   #anchor:hover {
     display: block;
-  /*  background-image: linear-gradient(#79aa4a, #5daa8d);
-    border-radius: 50%;*/
+    /*  background-image: linear-gradient(#79aa4a, #5daa8d);
+      border-radius: 50%;*/
     transition: 1.2s;
     opacity: 0.8;
   }
@@ -141,6 +142,7 @@ $primary-color: #222222;
   width: 100%;
   max-width: 1920px;
   min-width: 350px;
+  margin-bottom: 100px;
   &__intro {
     display: block;
     text-align: center;
@@ -188,11 +190,20 @@ $primary-color: #222222;
   background-size: cover;
   height: 500px;
   width: 100%;
+  /*#invisible {
+    display: block;
+    float: left;
+    background-color: #a7ee69;
+    width: 213px;
+    min-width: 10px;
+    height: 500px;
+    clear: both;
+  }*/
   img {
     display: block;
     float: right;
     position: absolute;
-    right: 313px;
+    right: 213px;
     z-index: 0;
     margin-top: 75px;
   }
@@ -204,29 +215,32 @@ $primary-color: #222222;
     margin-left: 213px;
     h2 {
       display: block;
-      color: #ffffff;
+      color: $second-primary-color;
       font-size: 45px;
       font-weight: 400;
       line-height: 46px;
       text-transform: uppercase;
     }
     p {
+      display: block;
       width: 524px;
+      min-width: 200px;
       height: 78px;
       float: left;
       font-size: 22px;
       font-weight: 100;
       line-height: 23px;
-      color: #ffffff;
+      color: $second-primary-color;
       margin-top: -20px;
-      text-align: left;
     }
     a {
-      margin-top: 48px;
+      margin-top: 118px;
+      /*margin-left: 213px;*/
       display: block;
+      position: absolute;
       clear: left;
       float: left;
-      color: #ffffff;
+      color: $second-primary-color;
       font-size: 18px;
       font-weight: 400;
       line-height: 20px;
@@ -242,6 +256,89 @@ $primary-color: #222222;
       border-right: 1px solid #a7ee69;
       padding: 0 8px 0;
     }
-
   }
 }
+
+/*____FOURTH SECTION_____*/
+.ba-container-our-work-header {
+  display: block;
+  width: 100%;
+  text-align: center;
+  h2 {
+    margin-top: 103px;
+    color: #222222;
+    font-family: Raleway, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+  hr {
+    width: 86px;
+    height: 2px;
+    border: none;
+    text-align: center;
+    background-color: $primary-color;
+    margin-top: 46px;
+    margin-bottom: 14px;
+  }
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 77px;
+  &__our-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 370px;
+    min-width: 200px;
+    &--animation {
+      position: absolute;
+      background-color: #000000;
+      opacity: 0;
+      margin: 0 auto;
+      width: 370px;
+      height: 420px;
+      color: $second-primary-color;
+      h3 {
+        color: $second-primary-color;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 50px;
+        margin-top: 150px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    &--animation:hover, .flex-container__our-work:hover {
+      opacity: 0.75;
+      transition: 1.3s;
+    }
+  }
+}
+#our-work-button {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid $primary-color;
+  width: 370px;
+  height: 60px;
+  background: none;
+  font-size: 24px;
+  line-height: 56px;
+  bottom: 80px;
+}
+#our-work-button:hover {
+    background-image: linear-gradient(30deg, #21B5AE, #242455, #E5E4E2);
+    transition: 1.2s;
+    border-color: $second-primary-color;
+    color: $second-primary-color;
+}
+/*____FOURTH SECTION_____*/
