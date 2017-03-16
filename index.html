@@ -34,7 +34,7 @@
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
             Aenean commodo ligula eget dolor. Aenean massa.
         </p>
-        <a href="#App">
+        <a href="#app">
             <img id="anchor" src="image/1sec-buttondown.svg" alt="down-to-app">
         </a>
         <!-- <div class="ion-chevron-down"></div>-->
@@ -43,12 +43,12 @@
 <main>
     <div class="common-flex-container">                        <!--SECOND SECTION-->
         <section class="common-flex-container__intro">
-            <h1 id="App">our services</h1>
+            <h1 id="app">our services</h1>
             <hr>
         </section>
         <section class="common-flex-container__services">
             <img src="image/2section-iphone.svg" alt="#">
-            <h2>App Design</h2>
+            <h2 class="common-flex-container__services--fix">App Design</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 ilabore et dolore.
@@ -64,7 +64,7 @@
         </section>
         <section class="common-flex-container__services">
             <img src="image/2section-check.svg" alt="#">
-            <h2>Pixel Perfect Design</h2>
+            <h2 class="common-flex-container__services--fixed">Pixel Perfect Design</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 ilabore et dolore.
@@ -155,14 +155,14 @@
         </div>
 
         <form action="#" class="flex-container-form__forms">
-            <label>
+            <label class="flex-container-form__forms name-email">
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="email" name="email" placeholder="Email" required>
             </label>
-            <label>
+            <label class="flex-container-form__forms name-message">
             <input type="text" name="message" placeholder="Message" required>
             </label>
-            <button>SEND</button>
+            <button class="submit">SEND</button>
         </form>
 
     </section>

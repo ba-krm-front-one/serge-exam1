@@ -9,7 +9,6 @@
   background: url("../image/1header-img.png") 100% no-repeat;
   background-size: cover;
   display: block;
-  /*  width: 1600px;*/
   height: 900px;
   /*100vh;*/
   min-width: 500px;
@@ -17,14 +16,7 @@
   color: #fffefe;
   font-size: 14px;
   font-weight: 500;
-  line-height: 18px;
-  /*.ion-chevron-down {
-    font-size: 40px;
-    font-weight: 100;
-    position: relative;
-    text-align: center;
-    margin-bottom: 150px;
-  }*/ }
+  line-height: 18px; }
   .ba-container__logo {
     position: absolute;
     margin: 50px 0 0 215px; }
@@ -112,8 +104,6 @@
     margin: 0 auto; }
   .ba-container #anchor:hover {
     display: block;
-    /*  background-image: linear-gradient(#79aa4a, #5daa8d);
-      border-radius: 50%;*/
     transition: 1.2s;
     opacity: 0.8; }
 
@@ -159,23 +149,18 @@
     .common-flex-container__services h2 {
       font-size: 24px;
       line-height: 26px; }
+    .common-flex-container__services--fix {
+      margin-top: 30px; }
+    .common-flex-container__services--fixed {
+      padding-top: 35px; }
 
 /*____THIRD SECTION_____*/
 .ba-container-iphone {
   display: block;
-  background: url("../image/3section-background.png") 100% no-repeat;
+  background: url("../image/section3-background.png") 100% no-repeat;
   background-size: cover;
   height: 500px;
-  width: 100%;
-  /*#invisible {
-    display: block;
-    float: left;
-    background-color: #a7ee69;
-    width: 213px;
-    min-width: 10px;
-    height: 500px;
-    clear: both;
-  }*/ }
+  width: 100%; }
   .ba-container-iphone img {
     display: block;
     float: right;
@@ -293,7 +278,7 @@
   display: block;
   width: 100%;
   height: 139px; }
-  .ba-container-our-work-footer button {
+  .ba-container-our-work-footer #our-work-button {
     display: block;
     margin: 0 auto;
     border: 2px solid #222222;
@@ -303,12 +288,12 @@
     font-size: 24px;
     line-height: 60px;
     bottom: 80px; }
-    .ba-container-our-work-footer button button:hover {
-      display: block;
-      background-image: linear-gradient(30deg, #21B5AE, #242455, #E5E4E2);
-      transition: 1.2s;
-      border-color: #ffffff;
-      color: #ffffff; }
+  .ba-container-our-work-footer #our-work-button:hover {
+    display: block;
+    background-image: linear-gradient(30deg, #21B5AE, #242455, #E5E4E2);
+    transition: 1.2s;
+    border-color: #ffffff;
+    color: #ffffff; }
 
 /*____FIFTH SECTION_____*/
 .flex-container-form {
@@ -330,9 +315,13 @@
     min-width: 350px;
     max-width: 1920px;
     width: 700px;
-    margin-top: 94px;
+    margin-top: 76px;
     margin-bottom: 50px; }
     .flex-container-form__intro h2 {
+      font-family: Raleway, sans-serif;
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 60px;
       text-transform: uppercase; }
     .flex-container-form__intro hr {
       width: 86px;
@@ -340,8 +329,7 @@
       border: none;
       text-align: center;
       background-color: #ffffff;
-      margin-top: 46px;
-      margin-bottom: 14px; }
+      margin-top: 46px; }
   .flex-container-form__social {
     display: flex;
     justify-content: center;
@@ -353,7 +341,7 @@
       display: inline-block; }
       .flex-container-form__social li a {
         display: inline-block;
-        margin-right: 20px;
+        margin-right: 25px;
         text-decoration: none;
         color: red; }
         .flex-container-form__social li a :hover {
@@ -381,52 +369,70 @@
     align-content: space-around;
     width: 720px;
     min-width: 360px; }
-    .flex-container-form__forms label {
+    .flex-container-form__forms .name-email {
       display: flex;
+      flex-grow: 1;
       flex-direction: row;
       justify-content: space-around;
-      min-width: 330px; }
-      .flex-container-form__forms label input {
+      min-width: 200px; }
+      .flex-container-form__forms .name-email input {
         display: block;
         width: 302px;
+        padding-top: 83px;
+        padding-left: 30px;
         min-width: 200px;
         outline: none;
         background: none;
         border: none;
-        border-bottom: 2px solid #c0c0c0;
-        padding-left: 30px;
+        border-bottom: 2px solid #c01817;
         color: #ffffff;
         font-size: 18px;
         font-style: italic;
         line-height: 40px; }
-    .flex-container-form__forms input {
+    .flex-container-form__forms .name-message {
+      display: flex;
+      flex-grow: 2;
+      flex-direction: row;
+      justify-content: space-around;
+      min-width: 330px; }
+      .flex-container-form__forms .name-message input {
+        display: block;
+        width: 669px;
+        padding-top: 108px;
+        min-width: 300px;
+        outline: none;
+        background: none;
+        border: none;
+        border-bottom: 2px solid #c01817;
+        padding-left: 30px;
+        color: #ffffff;
+        font-size: 18px;
+        font-style: italic;
+        line-height: 40px;
+        margin-bottom: 50px; }
+    .flex-container-form__forms .submit {
       display: block;
-      width: 669px;
-      min-width: 300px;
-      outline: none;
-      background: none;
-      border: none;
-      border-bottom: 2px solid #c0c0c0;
-      padding-left: 30px;
-      color: #ffffff;
-      font-size: 18px;
-      font-style: italic;
-      line-height: 40px; }
-    .flex-container-form__forms button {
-      display: block;
-      margin: 0 auto;
       border: 2px solid #ffffff;
       color: #ffffff;
+      margin: 0 auto;
+      text-align: center;
       width: 183px;
       height: 60px;
       font-size: 24px;
       line-height: 60px;
-      bottom: 122px;
       text-transform: uppercase;
-      background: none; }
-      .flex-container-form__forms button button:hover {
-        display: block;
-        background-color: #222222;
-        color: red;
-        transition: 1.2s;
-        border-color: #ffffff; }
+      background: none;
+      /*Transition*/
+      -webkit-transition: all 0.5s ease;
+      /*Reflection*/
+      -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(0, 0, 0, 0.1))); }
+    .flex-container-form__forms .submit:hover {
+      display: block;
+      background-color: #9c0000;
+      transition: 1.2s;
+      border-color: #ffffff;
+      opacity: 1;
+      /*Reflection*/
+      -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(0, 0, 0, 0.4)));
+      /*Glow*/
+      -webkit-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8); }
